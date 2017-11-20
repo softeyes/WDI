@@ -1,0 +1,74 @@
+.image {
+  margin: auto;
+  width: 50%;
+}
+
+body {
+  background-color: Ivory;
+  color: Black;
+  font-family: 'Rubik', sans-serif;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.header {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.opener {
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.25em;
+}
+
+.description {
+  text-align: center;
+  font-family: 'FuturaRennerRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.25em;
+}
+
+.resume {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 2em;
+  padding: 0.5em 4em;
+}
+
+p {
+  text-align: center;
+  font-size: 1em;
+}
+
+li {
+  text-align: center;
+  font-family: 'GlacialIndifferenceRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.top {
+  padding: 1em 4em;
+}
+
+.experience {
+  padding: 1em 4em;
+}
+
+.relevantExperience {
+  padding: 1em 4em;
+}
+
+.education {
+  padding: 1em 4em;
+}

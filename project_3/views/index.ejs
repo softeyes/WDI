@@ -1,0 +1,43 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Daily Inspiration</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- load fontawesome -->
+    <style>
+        body {
+            padding-top: 280px;
+            background-color: white;
+        }
+
+        .jumbotron {
+            background-color: #ccbb99;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron text-center">
+            <h1>
+                <span class="fa fa-fire"></span> Daily Inspiration</h1>
+
+            <p>Login or Register with:</p>
+
+            <a href="/login" class="btn btn-default">
+                <span class="fa fa-user"></span> Local Login</a>
+            <a href="/signup" class="btn btn-default">
+                <span class="fa fa-user"></span> Local Signup</a>
+            <a href="/auth/goodreads" class="btn btn-danger">
+                <span class="fa fa-book"></span> Goodreads</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

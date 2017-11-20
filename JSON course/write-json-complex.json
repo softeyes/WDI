@@ -1,0 +1,22 @@
+{
+    "Inspirational": [
+        {
+        "title": "The Power of Positive Thinking",
+        "author": "Norman Peale",
+        "price": 9.03
+    },
+        {
+        "title": "How Successful People Think",
+        "author": "John Maxwell",
+        "price": 5.03
+    },
+        {
+        "title": "Life and Basketball",
+        "author": "Stephen Curry",
+        "price": 2.53
+    }
+                     ],
+    
+    "IT": [],
+    "Children's": [],
+}

@@ -1,0 +1,13 @@
+{
+    "first name": "John",
+    "last name": "Ko",
+    "age": 30,
+    "married": true,
+    "hobbies": null,
+    "experience": ["C", "Javascript", "Oracle"],
+    "address": {
+        "street name": "37A Tung Tau Wan Road",
+        "district": "Southern",
+        "city": "Hong Kong"
+    }
+}

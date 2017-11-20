@@ -1,0 +1,28 @@
+db.quotes.insert({
+    quote: 'Keep your eyes on the stars and your feet on the ground.',
+    author: 'Theodore Roosevelt'
+})
+db.quotes.insert({
+    quote: 'No one can make you feel inferior without your consent.',
+    author: 'Eleanor Roosevelt'
+})
+db.quotes.insert({
+    quote: 'There is no elevator to success — you have to take the stairs.',
+    author: 'Anonymous'
+})
+db.quotes.insert({
+    quote: 'Do what you love, or die.',
+    author: 'Jared Ko'
+})
+db.quotes.insert({
+    quote: 'Love your family, work super hard, live your passion.',
+    author: 'Gary Vaynerchuk'
+})
+db.quotes.insert({
+    quote: 'Life shrinks and expands on the proportion of your willingness to take risks and try new things.',
+    author: 'Anonymous'
+})
+db.quotes.insert({
+    quote: 'Action is the foundational key to all success.',
+    author: 'Pablo Picasso'
+})

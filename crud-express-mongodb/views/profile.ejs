@@ -1,0 +1,49 @@
+<!-- views/quote_page.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Daily Inspiration</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="page-header text-center">
+            <h1>
+                <span class="fa fa-fire"></span><br><br>
+                Daily Inspiration<br><br>
+            <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        </div>
+
+        <div class="row">
+                <ul class="quotes">
+                        <% for(var i=0; i<quotes.length; i++) {%>
+                            <li class="quote">
+                                <span>
+                                    <%= quotes[i].name %>
+                                </span>
+                                <span>
+                                    <%= quotes[i].quote %>
+                                </span>
+                            </li>
+                            <% } %>
+                    </ul>
+                
+                    <form action="/quotes" method="POST">
+                        <input type="text" placeholder="name" name="name">
+                        <input type="text" placeholder="quote" name="quote">
+                        <button type="submit">Submit</button>
+                    </form>
+    </div>
+</body>
+
+</html>

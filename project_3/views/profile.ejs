@@ -1,0 +1,97 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Daily Inspiration</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+
+        body {
+            padding-top: 200px;
+            background-color: white;
+            word-wrap: break-word;
+        }
+
+        .container {
+            background-color: #ccbb99;
+            border-radius: 10px;
+            width: 70%;
+            padding: 0 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="page-header text-center">
+            <h1>
+                <span class="fa fa-fire"></span> Daily Inspiration</h1>
+            <br>
+            <a href="/quotes" class="btn btn-danger btn-lg">
+                <span class="fa fa-quote-left"></span> Generate Quote
+                <span class="fa fa-quote-right"></span>
+            </a>
+            <br>
+            <br>
+        </div>
+
+        <div class="row text-center">
+
+            <!-- LOCAL INFORMATION -->
+            <div class="col-sm-6">
+                <div class="well">
+                    <h3>
+                        <span class="fa fa-user"></span> Local</h3>
+
+                    <p>
+                        <strong>id</strong>:
+                        <%= user._id %>
+                            <br>
+                            <strong>email</strong>:
+                            <%= user.local.email %>
+                                <br>
+                                <strong>password</strong>:
+                                <%= user.local.password %>
+                    </p>
+
+                </div>
+            </div>
+            <!-- GOODREADS INFORMATION -->
+            <div class="col-sm-6">
+                <div class="well">
+                    <h3 class="text-danger">
+                        <span class="fa fa-book"></span> Goodreads</h3>
+
+                    <!-- check if the user has this token (is the user authenticated with this social account) -->
+                    <% if (user.goodreads.token) { %>
+                        <p>
+                            <strong>id</strong>:
+                            <%= user.goodreads.id %>
+                                <br>
+                                <strong>token</strong>:
+                                <%= user.goodreads.token %>
+                                    <br>
+                                    <strong>display name</strong>:
+                                    <%= user.goodreads.displayName %>
+                                        <br>
+                        </p>
+
+                        <a href="/unlink/goodreads" class="btn btn-info">Unlink</a>
+                        <% } else { %>
+                            <a href="/connect/goodreads" class="btn btn-info">Connect Goodreads</a>
+                            <% } %>
+
+                </div>
+            </div>
+        </div>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>
